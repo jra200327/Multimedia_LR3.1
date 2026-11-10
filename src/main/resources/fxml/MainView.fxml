@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.web.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.iu3.documentviewer.FXMLController"
+            prefHeight="600" prefWidth="900">
+
+    <BorderPane AnchorPane.topAnchor="0.0"
+                AnchorPane.bottomAnchor="0.0"
+                AnchorPane.leftAnchor="0.0"
+                AnchorPane.rightAnchor="0.0">
+
+        <top>
+            <MenuBar>
+                <Menu text="Файл">
+                    <MenuItem text="Открыть" onAction="#onOpen"/>
+                </Menu>
+            </MenuBar>
+        </top>
+
+        <center>
+            <HTMLEditor fx:id="htmlEditor"/>
+        </center>
+
+    </BorderPane>
+</AnchorPane>
